@@ -1,3 +1,7 @@
+body {
+  line-height: 1;
+}
+
 .header {
   background-color: #fff;
   display: grid;
@@ -13,16 +17,67 @@ a.active {
   text-decoration: none;
 }
 
+.header__menu-list {
+  display: flex;
+  margin-top: -1px;
+  list-style: circle;
+  gap: 28px;
+  text-transform: lowercase;
+}
+
+.header__menu-item:first-child {
+  list-style: none;
+  padding-left: 0;
+}
+
+.header__menu-item {
+  padding-left: 4px;
+}
+
+.header__menu-link {
+  position: relative;
+  display: block;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  line-height: 1;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.header__menu-link--active {
+  padding-right: 0;
+  border-bottom-color: transparent;
+}
+
+
 .header__logo {
   display: block;
 }
-
-/* список контактовф */
+/* список контактов */
 .contact-list {
   text-align: left;
-  width: 336px;
-  text-decoration: none;
   list-style: none;
+}
+
+.header__info {
+  justify-self: end;
+  width: 240px;
+  margin-top: -2px;
+}
+
+.contact-list__content {
+  line-height: 24px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.contact-list__content--link {
+  border-bottom: 1px solid;
+}
+
+.contact-list__content--address {
+  margin-top: 1px;
 }
 
 /* первая секция */
@@ -81,32 +136,6 @@ a.active {
   line-height: 28px;
   text-align: center;
   padding: 10px 32px;
-}
-.header__pages {
-  display: flex;
-  list-style: none;
-  gap: 12px;
-  text-transform: lowercase;
-}
-.header__pages li + li::before {
-  content: "";
-  display: block;
-  height: 6px;
-  width: 6px;
-  border-radius: 6px;
-  border: 0.5px solid #000;
-  flex-shrink: 0;
-  margin-top: 9px;
-  margin-right: 12px;
-}
-
-.header__pages li {
-  display: flex;
-}
-
-.header__info {
-  width: 240px;
-  justify-self: end;
 }
 
 address {

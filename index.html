@@ -13,22 +13,34 @@
 
   <body>
     <header class="header">
-       <nav>
-        <ul class="header__pages">
-          <li><a href="index.html" class="active">Главная</a></li>
-          <li><a href="#">Посмотреть лоты</a></li>
-          <li><a href="#">Об аукционе</a></li>
+       <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link header__menu-link--active" href="index.html" class="active">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Посмотреть лоты</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Об аукционе</a>
+          </li>
         </ul>
       </nav>
 
       <a class="header__logo">
-        <img src="images/logo-black.svg" alt="logo" width="130"/>
+        <img src="images/logo-black.svg" alt="logo" width="136"/>
       </a>
 
       <ul class="header__info contact-list">
-        <li><a href="tel:+99995555555">+9 999 555 5555</a></li>
-        <li><a href="mailto:info@sobake.ge">info@sobake.ge</a></li>
-        <li><address>наб.Принсенграхт 263-265.Амстердам</address></li>
+        <li class="contact-list__item">
+          <a class="contact-list__content contact-list__content--link" href="tel:+99995555555">+9 999 555 5555</a>
+        </li>
+        <li class="contact-list__item">
+          <a class="contact-list__content contact-list__content--link" href="mailto:info@sobake.ge">info@sobaka.ge</a>
+        </li>
+        <li class="contact-list__item">
+          <address class="contact-list__content contact-list__content--address">наб. Принсенграхт 263- 265, Амстердам</address>
+        </li>
         </ul>
     </header>
 
