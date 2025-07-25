@@ -17,7 +17,7 @@ a.active {
   display: block;
 }
 
-/* список контактов */
+/* список контактовф */
 .contact-list {
   text-align: left;
   width: 336px;
@@ -40,11 +40,12 @@ a.active {
 .first-section h1 {
   display: grid;
   gap: 20px;
-  line-height: 1.15;
+  line-height: 115px;
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+
 }
 
 .first-section span:nth-child(2) {
@@ -59,11 +60,12 @@ a.active {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-    font-size: 18px;
-    line-height: 100%;
+    font-size: 22px;
+    line-height: 28px;
     height: 22px;
-  text-transform: uppercase;
+   text-transform: uppercase;
     margin-top: 133px;
+    padding-left: 50px 61px;
 }
 
 .first-section__description p {
@@ -211,7 +213,7 @@ address {
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 24px;
-  margin-top: 101px;
+  margin-top: 120px;
   margin-bottom: 92px;
   padding: 0 24px;
 }
